@@ -80,10 +80,7 @@ document_portal.egg-info/
 *.csv
 *.txt
 
-# Ignore Excel files
-*.xls
-*.xlsx
-*.xlsm
+
 
 # Ignore Word files
 *.doc
