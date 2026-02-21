@@ -1,4 +1,17 @@
-venv/# ========================
+# =========================================================
+# Outputs: keep only .md files
+# =========================================================
+outputs/**
+
+# Re-allow markdown inside outputs
+!outputs/**/*.md
+
+# Optional: keep folder structure (so empty dirs can exist)
+!outputs/**/
+
+
+venv/
+# ========================
 #  Python Cache & Virtualenv
 # ========================
 __pycache__/
@@ -29,8 +42,8 @@ faiss_index/
 # ========================
 #  Data & Archives
 # ========================
-data/
-outputs/
+
+
 archive/
 main_archive/
 *.pdf
@@ -44,7 +57,7 @@ main_archive/
 *.yml
 *.json
 *.sqlite3
-*.md   # Ignore Markdown files (notes, prompts, etc.)
+
 
 # ========================
 #  Logs
@@ -76,5 +89,3 @@ document_portal.egg-info/
 *.doc
 *.docx
 
-# Ignore Markdown files
-*.md
