@@ -1,4 +1,4 @@
-# Using LLMs to Generate NIH Data Management Plans (DMPs)
+# Code: Using LLMs to Generate NIH Data Management Plans (DMPs)
 
 ## Overview
 
@@ -7,9 +7,6 @@ Plans." The objective of this project is to automatically generate NIH-compliant
 The repository includes the DMP generation workflow and the outputs produced during the study.
 
 ------------------------------------------------------------------------
-
-## Project Standards
-
 ## Standards followed
 The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines](https://fair-biors.org/)**. All Python code follows **[PEP 8](https://peps.python.org/pep-0008/)** conventions, including consistent formatting, inline comments, and docstrings. Project dependencies are fully captured in **[requirements.txt](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/Requirements.txt)**. We also retain **[dmp-template](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/dmp-template.md)** as inside the prompt template used by the DMP generation workflow.
 
@@ -17,89 +14,78 @@ The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines
 
 ## Getting Started
 
-### Prerequisites
+```
+## Setup (Local Development)
 
-This project includes one primary Jupyter notebook **[main](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/main.ipynb)**.
-------------------------------------------------------------------------
+### Step 1 — Clone the repository
+```bash
+git clone https://github.com/fairdataihub/nih-dmp-llm-generation.git
+cd dmpchef
+code .
+```
 
-## Installation
+### Step 2 — Create and activate a virtual environment
 
-### 1. Clone the Repository
+**Windows (cmd):**
+```bash
+python -m venv venv
+venv\Scripts\activate.bat
+```
 
-Open a terminal (Anaconda Prompt on Windows or system terminal on
-macOS/Linux) and run:
+**macOS/Linux:**
+```bash
+python -m venv venv
+source venv/bin/activate
+```
 
-    git clone https://github.com/fairdataihub/nih-dmp-llm-generation.git
+### Step 3 — Install dependencies
+```bash
+pip install -r requirements.txt
+# or (recommended for local dev)
+pip install -e .
+```
+---
+### Step 4 --- Configure Large Language Models
 
-Navigate into the project directory:
+#### Option A --- Llama 3.3 (via Ollama)
 
-    cd nih-dmp-llm-generation
-
-------------------------------------------------------------------------
-
-### 2. Create and Activate a Virtual Environment
-
-Create a virtual environment:
-
-    python -m venv venv
-
-Activate it:
-
-Windows: venv`\Scripts`{=tex}`\activate`{=tex}
-
-macOS / Linux: source venv/bin/activate
-
-------------------------------------------------------------------------
-
-### 3. Install Dependencies
-
-    pip install -r requirements.txt
-
-------------------------------------------------------------------------
-
-### 4. Register a Jupyter Kernel
-
-    python -m ipykernel install --user --name=nih-dmp-llm-env
-
-------------------------------------------------------------------------
-
-### 5. Deactivate When Finished
-
-    deactivate
-
-------------------------------------------------------------------------
-
-## LLM Configuration
-
-### Llama 3.3 (via Ollama)
-
-1.  Install Ollama from: https://ollama.com/
+1.  Install Ollama from:\
+    https://ollama.com/
 
 2.  Pull the Llama 3.3 model:
 
-    ollama pull llama3.3
+``` bash
+ollama pull llama3.3
+```
 
-3.  Ensure Ollama is running before executing the notebook.
+3.  Ensure that the Ollama service is running before executing the
+    notebook or pipeline.
 
 ------------------------------------------------------------------------
 
-### GPT-4.1 (OpenAI API)
+#### Option B --- GPT-4.1 (OpenAI API)
 
 Set your OpenAI API key as an environment variable.
 
-Windows: setx OPENAI_API_KEY "your_api_key_here"
+**Windows (cmd):**
 
-macOS / Linux: export OPENAI_API_KEY="your_api_key_here"
+``` bash
+setx OPENAI_API_KEY "your_api_key_here"
+```
+
+**macOS/Linux:**
+
+``` bash
+export OPENAI_API_KEY="your_api_key_here"
+```
+
+After setting the environment variable, restart your terminal session to
+ensure the key is available to Python.
 
 ------------------------------------------------------------------------
 
-## Running the Notebook
-
-Start JupyterLab:
-
-    jupyter lab
-
-Open `main.ipynb` and select the registered kernel (e.g.,`nih-dmp-llm-env`).
+### step 5- Running the Notebook
+Use **[`demo.ipynb`](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/demo.ipynb)**.
 
 ------------------------------------------------------------------------
 
@@ -111,7 +97,6 @@ The notebook uses structured input files which is included **[dmp-template](http
 
 ## License
 This work is licensed under the **[MIT License](https://opensource.org/license/mit/)**. See **[LICENSE](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/LICENSE)** for more information.
-
 
 ---
 
