@@ -2,9 +2,7 @@
 
 ## Overview
 
-This repository contains the code associated with the paper: "Evaluating the Performance of LLMs in Drafting NIH Data Management
-Plans." The objective of this project is to automatically generate NIH-compliant using two large language models: Llama 3.3 & GPT-4.1
-The repository includes the DMP generation workflow and the outputs produced during the study.
+This repository contains the code associated with the paper: "Evaluating the Performance of LLMs in Drafting NIH Data Management Plans." The objective of this project is to automatically generate NIH-compliant using two large language models: Llama 3.3 & GPT-4.1 The repository includes the DMP generation workflow and the outputs produced during the study.
 
 ------------------------------------------------------------------------
 ## Standards followed
@@ -13,17 +11,14 @@ The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines
 ------------------------------------------------------------------------
 
 ## Getting Started
-
+**Setup (Local Development)**
 ```
-## Setup (Local Development)
-
 ### Step 1 — Clone the repository
 ```bash
 git clone https://github.com/fairdataihub/nih-dmp-llm-generation.git
 cd dmpchef
 code .
 ```
-
 ### Step 2 — Create and activate a virtual environment
 
 **Windows (cmd):**
@@ -31,13 +26,11 @@ code .
 python -m venv venv
 venv\Scripts\activate.bat
 ```
-
 **macOS/Linux:**
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
-
 ### Step 3 — Install dependencies
 ```bash
 pip install -r requirements.txt
@@ -46,8 +39,7 @@ pip install -e .
 ```
 ---
 ### Step 4 --- Configure Large Language Models
-
-#### Option A --- Llama 3.3 (via Ollama)
+**Llama 3.3 (via Ollama)**
 
 1.  Install Ollama from:\
     https://ollama.com/
@@ -61,9 +53,7 @@ ollama pull llama3.3
 3.  Ensure that the Ollama service is running before executing the
     notebook or pipeline.
 
-------------------------------------------------------------------------
-
-#### Option B --- GPT-4.1 (OpenAI API)
+**GPT-4.1 (OpenAI API)**
 
 Set your OpenAI API key as an environment variable.
 
@@ -79,10 +69,7 @@ setx OPENAI_API_KEY "your_api_key_here"
 export OPENAI_API_KEY="your_api_key_here"
 ```
 
-After setting the environment variable, restart your terminal session to
-ensure the key is available to Python.
-
-------------------------------------------------------------------------
+After setting the environment variable, restart your terminal session to ensure the key is available to Python.
 
 ### step 5- Running the Notebook
 Use **[`demo.ipynb`](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/demo.ipynb)**.
@@ -98,13 +85,13 @@ The notebook uses structured input files which is included **[dmp-template](http
 ## License
 This work is licensed under the **[MIT License](https://opensource.org/license/mit/)**. See **[LICENSE](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/LICENSE)** for more information.
 
----
+------------------------------------------------------------------------
 
 ## Feedback and contribution
 Use **[GitHub Issues](https://github.com/fairdataihub/nih-dmp-llm-generation/issues)** to submit feedback, report problems, or suggest improvements.  
 You can also **fork** the repository and submit a **Pull Request** with your changes.
 
----
+------------------------------------------------------------------------
 
 ## How to cite
 If you use this code, please cite this repository using the **versioned DOI on Zenodo** for the specific release you used (instructions will be added once the Zenodo record is available). For now, you can reference the repository here: **[fairdataihub/nih-dmp-llm-generation](https://github.com/fairdataihub/nih-dmp-llm-generation)**.
