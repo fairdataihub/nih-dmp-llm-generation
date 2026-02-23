@@ -78,7 +78,7 @@ document_portal.egg-info/
 
 # Ignore text and data files
 *.csv
-*.txt
+
 
 
 
