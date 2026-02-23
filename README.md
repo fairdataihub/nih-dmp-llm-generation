@@ -2,7 +2,9 @@
 
 ## Overview
 
-This repository contains the code associated with the paper: "Evaluating the Performance of LLMs in Drafting NIH Data Management Plans." The objective of this project is to automatically generate NIH-compliant using two large language models: Llama 3.3 & GPT-4.1. The repository includes the DMP generation workflow and the outputs produced during the study. In the associated paper, DMP generation was conducted over 10 independent runs to ensure robustness. Due to storage constraints, this repository provides the outputs from a single representative run.
+This repository contains the code associated with the paper: "Evaluating the Performance of LLMs in Drafting NIH Data Management Plans." The objective of this project is to automatically generate NIH-compliant using two large language models: Llama 3.3 & GPT-4.1. The repository includes the DMP generation workflow and the outputs produced during the study. 
+
+In the associated paper, DMP generation was conducted over 10 independent runs to ensure robustness. Due to storage constraints, this repository provides the outputs from a single representative run.
 
 ------------------------------------------------------------------------
 ## Standards followed
