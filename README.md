@@ -38,7 +38,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 ---
-### Step 4 --- Configure Large Language Models
+### Step 4 — Configure Large Language Models
 **Llama 3.3 (via Ollama)**
 
 1.  Install Ollama from:\
@@ -72,7 +72,7 @@ export OPENAI_API_KEY="your_api_key_here"
 After setting the environment variable, restart your terminal session to ensure the key is available to Python.
 
 ### step 5- Running the Notebook
-Use **[`demo.ipynb`](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/demo.ipynb)**.
+Use **[`main.ipynb`](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/demo.ipynb)**.
 
 ------------------------------------------------------------------------
 
