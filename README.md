@@ -11,8 +11,6 @@ The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines
 ------------------------------------------------------------------------
 
 ## Getting Started
-**Setup (Local Development)**
-```
 ### Step 1 — Clone the repository
 ```bash
 git clone https://github.com/fairdataihub/nih-dmp-llm-generation.git
