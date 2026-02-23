@@ -2,31 +2,16 @@
 
 ## Overview
 
-This repository contains the code associated with the paper:
-
-"Evaluating the Performance of LLMs in Drafting NIH Data Management
-Plans."
-
-The objective of this project is to automatically generate NIH-compliant
-Data Management Plans (DMPs) using two large language models:
-
--   Llama 3.3
--   GPT-4.1
-
-The repository includes the DMP generation workflow, evaluation
-components, and the outputs produced during the study.
+This repository contains the code associated with the paper: "Evaluating the Performance of LLMs in Drafting NIH Data Management
+Plans." The objective of this project is to automatically generate NIH-compliant using two large language models: Llama 3.3 & GPT-4.1
+The repository includes the DMP generation workflow and the outputs produced during the study.
 
 ------------------------------------------------------------------------
 
 ## Project Standards
 
-The overall structure of the repository follows the FAIR-BioRS
-guidelines: https://fair-biors.org/
-
-The Python code in the Jupyter notebook `main.ipynb` adheres to PEP 8
-style guidelines: https://peps.python.org/pep-0008/
-
-All required dependencies are listed in the `requirements.txt` file.
+## Standards followed
+The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines](https://fair-biors.org/)**. All Python code follows **[PEP 8](https://peps.python.org/pep-0008/)** conventions, including consistent formatting, inline comments, and docstrings. Project dependencies are fully captured in **[requirements.txt](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/Requirements.txt)**. We also retain **[dmp-template](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/dmp-template.md)** as inside the prompt template used by the DMP generation workflow.
 
 ------------------------------------------------------------------------
 
@@ -34,16 +19,7 @@ All required dependencies are listed in the `requirements.txt` file.
 
 ### Prerequisites
 
-This project includes one primary Jupyter notebook:
-
-    main.ipynb
-
-To run the code, you will need:
-
--   Python 3.9 or higher
--   Internet access and an OpenAI API key (for GPT-4.1 usage)
--   Ollama installed locally (for running Llama 3.3)
-
+This project includes one primary Jupyter notebook **[main](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/main.ipynb)**.
 ------------------------------------------------------------------------
 
 ## Installation
@@ -123,41 +99,27 @@ Start JupyterLab:
 
     jupyter lab
 
-Open `main.ipynb` and select the registered kernel (e.g.,
-`nih-dmp-llm-env`).
+Open `main.ipynb` and select the registered kernel (e.g.,`nih-dmp-llm-env`).
 
 ------------------------------------------------------------------------
 
 ## Inputs and Outputs
 
-The notebook uses structured input files included in this repository.
-
-Generated NIH Data Management Plans from GPT-4.1 and Llama 3.3 are saved
-in the `outputs/` directory:
-
-https://github.com/fairdataihub/nih-dmp-llm-generation/tree/main/outputs
+The notebook uses structured input files which is included **[dmp-template](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/dmp-template.md)** and **[inputs](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/inputs.xlsx)** in this repository. Generated NIH Data Management Plans from GPT-4.1 and Llama 3.3 are saved in the `outputs/` directory: https://github.com/fairdataihub/nih-dmp-llm-generation/tree/main/outputs
 
 ------------------------------------------------------------------------
 
 ## License
+This work is licensed under the **[MIT License](https://opensource.org/license/mit/)**. See **[LICENSE](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/LICENSE)** for more information.
 
-This project is distributed under the MIT License. See the `LICENSE`
-file for full details.
 
-------------------------------------------------------------------------
+---
 
-## Contributions and Feedback
+## Feedback and contribution
+Use **[GitHub Issues](https://github.com/fairdataihub/nih-dmp-llm-generation/issues)** to submit feedback, report problems, or suggest improvements.  
+You can also **fork** the repository and submit a **Pull Request** with your changes.
 
-Contributions and feedback are welcome. Please use the GitHub Issues
-page to report problems or suggest improvements:
+---
 
-https://github.com/fairdataihub/nih-dmp-llm-generation/issues
-
-You may also fork the repository and submit a pull request.
-
-------------------------------------------------------------------------
-
-## Citation
-
-If you use this code in your research, please follow the citation
-instructions provided in the `CITATION.cff` file.
+## How to cite
+If you use this code, please cite this repository using the **versioned DOI on Zenodo** for the specific release you used (instructions will be added once the Zenodo record is available). For now, you can reference the repository here: **[fairdataihub/nih-dmp-llm-generation](https://github.com/fairdataihub/nih-dmp-llm-generation)**.
