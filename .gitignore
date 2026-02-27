@@ -1,56 +1,41 @@
-# =========================================================
-# Outputs: keep only .md files
-# =========================================================
+# Outputs: keep only Markdown files
 outputs/**
 
-# Re-allow markdown inside outputs
+# Re-allow markdown files inside outputs
 !outputs/**/*.md
 
-# Optional: keep folder structure (so empty dirs can exist)
+# Keep folder structure
 !outputs/**/
 
-
-venv/
-# ========================
-#  Python Cache & Virtualenv
-# ========================
+# Python Cache & Virtual Environments
 __pycache__/
 *.py[cod]
-*.so
-*.pyd
 *.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+
 env/
 venv/
 .venv/
-*.egg-info/
-*.egg
 
-# ========================
-#  OS & Editor Files
-# ========================
+# OS & Editor Files
 .DS_Store
 .vscode/
 .idea/
 
-# ========================
-#  LangChain / Vector Store
-# ========================
+# LangChain / Vector Store
 faiss_index/
 *.faiss
 *.pkl
 
-# ========================
-#  Data & Archives
-# ========================
-
-
+# Data & Archives
 archive/
 main_archive/
 *.pdf
 
-# ========================
-#  Secrets & Configs
-# ========================
+# Secrets & Configs
 .env
 .env.*
 *.yaml
@@ -58,31 +43,21 @@ main_archive/
 *.json
 *.sqlite3
 
-
-# ========================
-#  Logs
-# ========================
+# Logs
 logs/
 *.log
 
-# ========================
-#  Build & Distribution
-# ========================
+# Build & Distribution
 dist/
 build/
 document_portal.egg-info/
 
-
-# Ignore image files
+# Ignore generated images
 *.png
 
 # Ignore text and data files
 *.csv
 
-
-
-
 # Ignore Word files
 *.doc
 *.docx
-
