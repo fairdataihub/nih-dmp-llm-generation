@@ -1,0 +1,45 @@
+{
+  "name": "nih-dmp-llm-generation",
+  "@context": "https://w3id.org/codemeta/3.0",
+  "author": [
+    {
+      "affiliation": {
+        "name": "FAIR Data Innovations Hub, California Medical Innovations Institute",
+        "type": "Organization"
+      },
+      "email": "nzeinali@calmi2.org",
+      "familyName": "Zeinali",
+      "id": "_:author_1",
+      "givenName": "Nahid",
+      "type": "Person"
+    },
+    {
+      "affiliation": {
+        "name": "FAIR Data Innovations Hub, California Medical Innovations Institute",
+        "type": "Organization"
+      },
+      "email": "bpatel@calmi2.org",
+      "familyName": "Patel",
+      "id": "_:author_2",
+      "givenName": "Bhavesh",
+      "type": "Person"
+    }
+  ],
+  "dateCreated": "2026-02-27",
+  "description": "This repository contains the code for the paper “Evaluating the Performance of LLMs in Drafting NIH Data Management Plans.” It implements an automated workflow for generating NIH-compliant Data Management Plans using Llama 3.3 and GPT-4.1, and includes the generation pipeline and study outputs.",
+  "keywords": [
+    "LLM",
+    "GPT",
+    "Llama",
+    "Ollama",
+    "DMPs",
+    "FAIR Data Innovations Hub"
+  ],
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": [
+    "Python"
+  ],
+  "schema:releaseNotes": ".",
+  "version": "1.2.0",
+  "type": "SoftwareSourceCode"
+}
