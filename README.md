@@ -8,7 +8,7 @@ In the associated paper, DMP generation was conducted over 10 independent runs t
 
 ------------------------------------------------------------------------
 ## Standards followed
-The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines](https://fair-biors.org/)**. All Python code follows **[PEP 8](https://peps.python.org/pep-0008/)** conventions, including consistent formatting, inline comments, and docstrings. Project dependencies are fully captured in **[requirements.txt](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/Requirements.txt)**. We also retain **[dmp-template](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/dmp-template.md)** as inside the prompt template used by the DMP generation workflow.
+The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines](https://fair-biors.org/)**. All Python code follows **[PEP 8](https://peps.python.org/pep-0008/)** conventions, including consistent formatting, inline comments, and docstrings. Project dependencies are fully captured in **[requirements.txt](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/requirements.txt)**. We also retain **[dmp-template](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/dmp-template.md)** as inside the prompt template used by the DMP generation workflow.
 
 ------------------------------------------------------------------------
 
@@ -81,7 +81,7 @@ The notebook uses structured input files which is included **[dmp-template](http
 ------------------------------------------------------------------------
 
 ## License
-This work is licensed under the **[MIT License](https://opensource.org/license/mit/)**. See **[LICENSE](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/LICENSE)** for more information.
+This work is licensed under the **[MIT License](https://opensource.org/license/mit/)**. See **[LICENSE](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/LICENSE.txt)** for more information.
 
 ------------------------------------------------------------------------
 
@@ -92,4 +92,4 @@ You can also **fork** the repository and submit a **Pull Request** with your cha
 ------------------------------------------------------------------------
 
 ## How to cite
-If you use this code, please cite this repository using the **versioned DOI on Zenodo** for the specific release you used (instructions will be added once the Zenodo record is available). For now, you can reference the repository here: **[fairdataihub/nih-dmp-llm-generation](https://github.com/fairdataihub/nih-dmp-llm-generation)**.
+If you use this code, please cite this repository using following the instructions in the [CITATION.cff](CITATION.cff) file.
