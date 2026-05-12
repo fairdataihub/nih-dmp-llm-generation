@@ -76,7 +76,7 @@ Use **[`main.ipynb`](https://github.com/fairdataihub/nih-dmp-llm-generation/blob
 
 ## Inputs and Outputs
 
-The notebook uses structured input files which is included **[dmp-template](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/dmp-template.md)** and **[inputs](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/inputs.xlsx)** in this repository. Generated NIH Data Management Plans from GPT-4.1 and Llama 3.3 are saved in the `outputs/` directory: https://github.com/fairdataihub/nih-dmp-llm-generation/tree/main/outputs
+The notebook uses structured input files which is included **[dmp-template](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/dmp-template.md)** and **[inputs](https://github.com/fairdataihub/nih-dmp-llm-generation/blob/main/inputs/inputs.xlsx)** in this repository. Generated NIH Data Management Plans from GPT-4.1 and Llama 3.3 are saved in the **[outputs](https://github.com/fairdataihub/nih-dmp-llm-generation/tree/main/outputs)**
 
 ------------------------------------------------------------------------
 
