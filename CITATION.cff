@@ -11,10 +11,11 @@ authors:
 cff-version: 1.2.0
 message: If you use this software, please cite it using the metadata from this file.
 type: software
-abstract: This repository contains the code for the paper “Evaluating the
-  Performance of LLMs in Drafting NIH Data Management Plans.” It implements an
-  automated workflow for generating NIH-compliant Data Management Plans using
-  Llama 3.3 and GPT-4.1, and includes the generation pipeline and study outputs.
+abstract: >-
+  This repository contains the code for the paper “Evaluating the Performance of
+  LLMs in Drafting NIH Data Management Plans.” It implements an automated
+  workflow for generating NIH-compliant Data Management Plans using Llama 3.3
+  and GPT-4.1, and includes the generation pipeline and study outputs.
 keywords:
   - LLM
   - GPT
@@ -23,4 +24,6 @@ keywords:
   - DMPs
   - FAIR Data Innovations Hub
 license: MIT
-version: 1.2.0
+version: 1.0.0
+doi: 10.5281/zenodo.19462642
+date-released: '2026-04-07'

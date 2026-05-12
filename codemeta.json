@@ -40,6 +40,8 @@
     "Python"
   ],
   "schema:releaseNotes": ".",
-  "version": "1.2.0",
-  "type": "SoftwareSourceCode"
+  "version": "1.0.0",
+  "type": "SoftwareSourceCode",
+  "identifier": "10.5281/zenodo.19462642",
+  "dateModified": "2026-04-07"
 }
